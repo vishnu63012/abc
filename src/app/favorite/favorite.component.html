@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4">
+            <div class="col mt-3" *ngFor="let obj of data">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <img src="{{obj.imgUrl}}" class="card-img mx-auto" style="max-height: 450px;max-width: 300px;" alt="">
+                        <p><span>TITLE:</span>{{obj.bookTitle}}</p>
+                        <p><span>LANG:</span>{{obj.language}}</p>
+                        <p><span>GENRE:</span>{{obj.genre}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-warning mt-2 mx-auto d-block">Buy now</button>
+                        <button class="btn btn-success mt-2 mx-auto d-block">EXPLORE MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

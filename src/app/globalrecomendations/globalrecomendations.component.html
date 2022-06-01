@@ -1,0 +1,15 @@
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4">
+    <div class="col mt-3" *ngFor="let obj of recomendations">
+        <div class="card h-100 text-center h-100 p-3">
+            <h1 class="text-center headings">{{obj.bookTitle}}</h1>
+            <img src="{{obj.imgUrl}}" class="card-img mx-auto" style="max-height: 400px;max-width: 200px;" alt="">
+            <div class="card-body">
+                <p><span>Language:</span>{{obj.language}}</p>
+                <p><span>Genre:</span>{{obj.genre}}</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-warning mt-2" (click)="viewdata(obj)">View</button>
+            </div>
+        </div>
+    </div>
+</div>
