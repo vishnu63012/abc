@@ -15,6 +15,8 @@ export class FavoriteComponent implements OnInit {
     this.favSerObj.getFavorites().subscribe({
       next:(res)=>{
         this.data = res.payload.property
+        console.log(this.data);
+        
       },
       error:(err)=>{
         alert(err)

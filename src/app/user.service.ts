@@ -39,6 +39,6 @@ export class UserService {
 
     //get all books
     allBooks():Observable<any>{
-      return this.httpObj.get("http://localhost:5000/books/allbooks")
+      return this.httpObj.get("https://newsapi.org/v2/everything?q=tesla&from=2022-05-01&sortBy=publishedAt&apiKey=050de02f747141dd8b9eb41dffee3920")
     }
 }

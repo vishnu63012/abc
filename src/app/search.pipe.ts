@@ -10,7 +10,7 @@ export class SearchPipe implements PipeTransform {
       return productData
     }
     else{
-      return productData.filter(product=>product.bookTitle.toLowerCase().indexOf(searchTerm.toLowerCase())!==-1)
+      return productData.filter(product=>product.title.toLowerCase().indexOf(searchTerm.toLowerCase())!==-1)
     }
   }
 }

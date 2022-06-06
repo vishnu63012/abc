@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light p-3 bg-warning">
-  <a class="navbar-brand" style="font-size: xx-large;"  href="#">PAGES</a>
+<nav class="navbar navbar-expand-lg navbar-dark p-3">
+  <a class="navbar-brand" style="font-size: xx-large;"  href="#">NEWSAPP</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,7 +10,7 @@
       </li>
       <form class="form-inline d-flex ms-3">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchTerm">
-        <button class="btn btn-sm btn-outline-light my-2 my-sm-0" (click)="search()">Search</button>
+        <button class="btn search btn-lg btn-dark my-2 my-sm-0" (click)="search()"><i class="bi bi-search"></i></button>
       </form>
       <li class="nav-item active">
         <a class="nav-link" style="font-size: x-large;" *ngIf="userSerObj.getUserData().getValue()!==null" routerLink="/recomend" routerLinkActive="active">GLOBAL RECOMENDATIONS</a>

@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.userSerObj.allBooks().subscribe({
       next:(res)=>{
-        this.data=res.Books
+        console.log(res.articles);
+        this.data=res.articles
         this.iterateData = this.data
         this.userSerObj.productData.next(this.data)
       },
